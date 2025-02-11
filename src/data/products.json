@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": 3,
+    "title": "Guitarra Gibson",
+    "description": "Guitarra SG",
+    "code": "fgm234",
+    "price": 800,
+    "status": true,
+    "stock": 12,
+    "category": "guitarras",
+    "thumbnail": ""
+  },
+  {
+    "id": 4,
+    "title": "Guitarra Telecaster",
+    "description": "Guitarra Jay",
+    "code": "huj556",
+    "price": 900,
+    "status": true,
+    "stock": 5,
+    "category": "guitarras",
+    "thumbnail": ""
+  },
+  {
+    "id": 5,
+    "title": "Bajo Electrico",
+    "description": "Bajo SX",
+    "code": "kil333",
+    "price": 455,
+    "status": true,
+    "stock": 5,
+    "category": "bajo",
+    "thumbnail": ""
+  },
+  {
+    "id": 1,
+    "title": "Bateria Acustica",
+    "description": "Bateria Pearl",
+    "code": "jko267",
+    "price": 200,
+    "status": true,
+    "stock": 9,
+    "category": "bateria",
+    "thumbnail": ""
+  }
+]
