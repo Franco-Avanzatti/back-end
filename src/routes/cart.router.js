@@ -1,8 +1,8 @@
 import express from 'express';
-import CartManager from '../CartManager.js';
+import CartManagerMongo from '../managers/CartManagerMongo.js';
 
 const router = express.Router();
-const cartManager = new CartManager();
+const cartManager = new CartManagerMongo();
 
 // Ruta POST / - Crear un carrito
 router.post('/', async (req, res) => {
@@ -13,6 +13,7 @@ router.post('/', async (req, res) => {
     res.status(505).json({ error: 'Error al crear el carrito' });
   }
 });
+
 
 // Ruta GET /:cid - Obtener productos del carrito
 router.get('/:cid', async (req, res) => {
@@ -29,7 +30,7 @@ router.get('/:cid', async (req, res) => {
 });
 
 // Ruta POST /:cid/product/:pid - Agregar producto al carrito
-router.post('/:cid/product/:pid', async (req, res) => {
+router.put('/:cid/product/:pid', async (req, res) => {
   try {
     const cart = await cartManager.addProductToCart(req.params.cid, req.params.pid);
     res.status(201).json(cart);
@@ -37,5 +38,15 @@ router.post('/:cid/product/:pid', async (req, res) => {
     res.status(505).json({ error: 'Error al agregar el producto al carrito' });
   }
 });
+
+router.delete('/:cid/product/:pid', async (req, res) => {
+  try {
+    const cart = await cartManager.deleteProductFromCart(req.params.cid, req.params.pid);
+    res.status(204).end(); // No content
+  } catch (error) {
+    res.status(505).json({ error: 'Error al eliminar el producto del carrito' });
+  }
+});
+
 
 export default router;

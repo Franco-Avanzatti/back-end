@@ -1,5 +1,11 @@
 import fs from 'fs';
 
+/**
+ * @deprecated use CartManagerMongo instead
+ */
+
+
+
 class CartManager {
   constructor() {
     this.filePath = './src/data/cart.json';
@@ -14,7 +20,7 @@ class CartManager {
       throw new Error('Error al leer los carritos');
     }
   }
-
+ 
   // Obtener un carrito por ID
   async getById(id) {
     try {

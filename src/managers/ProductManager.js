@@ -1,6 +1,8 @@
 import fs from 'fs';
 
-
+/**
+ * @deprecated use ProductManagerMongo instead
+ */
 class ProductManager {
   constructor() {
     this.filePath = './src/data/products.json';

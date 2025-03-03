@@ -42,5 +42,125 @@
     "stock": 9,
     "category": "bateria",
     "thumbnail": ""
+  },
+  {
+    "id": "1740695387177",
+    "title": "Bajo",
+    "description": "Bajo electrctico",
+    "code": "1000",
+    "price": 2000,
+    "stock": 20,
+    "category": "bajo",
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "Piano Yamaha",
+    "description": "Piano de cola Yamaha",
+    "code": "piano001",
+    "price": 5000,
+    "status": true,
+    "stock": 2,
+    "category": "piano",
+    "thumbnail": ""
+  },
+  {
+    "id": 7,
+    "title": "Teclado Roland",
+    "description": "Teclado electrónico Roland",
+    "code": "tecl002",
+    "price": 1200,
+    "status": true,
+    "stock": 7,
+    "category": "teclado",
+    "thumbnail": ""
+  },
+  {
+    "id": 8,
+    "title": "Bongo",
+    "description": "Bongo de madera",
+    "code": "bng003",
+    "price": 150,
+    "status": true,
+    "stock": 15,
+    "category": "percusion",
+    "thumbnail": ""
+  },
+  {
+    "id": 9,
+    "title": "Guitarra Fender Stratocaster",
+    "description": "Guitarra Fender icónica",
+    "code": "fnd004",
+    "price": 1200,
+    "status": true,
+    "stock": 6,
+    "category": "guitarras",
+    "thumbnail": ""
+  },
+  {
+    "id": 10,
+    "title": "Caja Flamenca",
+    "description": "Cajón flamenco profesional",
+    "code": "caj005",
+    "price": 180,
+    "status": true,
+    "stock": 10,
+    "category": "percusion",
+    "thumbnail": ""
+  },
+  {
+    "id": 11,
+    "title": "Saxofón Alto",
+    "description": "Saxofón profesional Yamaha",
+    "code": "saxo006",
+    "price": 3000,
+    "status": true,
+    "stock": 4,
+    "category": "viento",
+    "thumbnail": ""
+  },
+  {
+    "id": 12,
+    "title": "Violin Stradivarius",
+    "description": "Violín réplica Stradivarius",
+    "code": "viol007",
+    "price": 2500,
+    "status": true,
+    "stock": 3,
+    "category": "cuerdas",
+    "thumbnail": ""
+  },
+  {
+    "id": 13,
+    "title": "Trompeta Bach",
+    "description": "Trompeta dorada de alto rendimiento",
+    "code": "trom008",
+    "price": 1500,
+    "status": true,
+    "stock": 5,
+    "category": "viento",
+    "thumbnail": ""
+  },
+  {
+    "id": 14,
+    "title": "Maracas",
+    "description": "Par de maracas de madera",
+    "code": "mrc009",
+    "price": 50,
+    "status": true,
+    "stock": 30,
+    "category": "percusion",
+    "thumbnail": ""
+  },
+  {
+    "id": 15,
+    "title": "Ukulele",
+    "description": "Ukulele hawaiano de caoba",
+    "code": "uku010",
+    "price": 120,
+    "status": true,
+    "stock": 12,
+    "category": "cuerdas",
+    "thumbnail": ""
   }
 ]

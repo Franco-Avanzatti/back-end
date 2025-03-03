@@ -1,10 +1,38 @@
-<div>
-    <h1>Home</h1>
-    <h2>Lista de Productos</h2>
-    <ul>
-        {{#each  products}}
+    <div>
+        <h1>Home</h1>
+        <section>
+            <header>
+                <h2>Lista de Productos</h2>
+            </header>
+            <div>
+                <menu>
+                    <h3>Filtros</h3>
+                    <form action="">
+                        <input type="hidden" name="page" value="{{products.page}}">
 
-        <li>{{this.title}} - {{this.price}}</li>
-        {{/each}}
-    </ul>
-</div>
+                        <label for="">Sin Ordenamiento</label>
+                        <input type="radio" name="sort" id="sort" value="">
+                        <label for="">Mayor Precio</label>
+                        <input type="radio" name="sort" id="sort" value="ASC">
+                        <label for="">Menor Precio</label>
+                        <input type="radio" name="sort" id="sort" value="DESC">
+                        <button type="submit">filtrar</button>
+                    </form>
+
+                </menu>
+                <ul id="productList">
+                    {{#each  products.docs}}
+                    <li>
+                        {{this.title}} - {{this.price}}
+                        <button class="deleteButton" data-id={{this._id}}>Eliminar</button>
+                    </li>
+                    {{/each}}
+                </ul>
+                <menu>
+                    <a href="?page={{products.prevPage}}">Prev</a>
+                    <p>{{products.page}}</p>
+                    <a href="?page={{products.nextPage}}">Next</a>
+                </menu>
+            </div>
+        </section>
+    </div>

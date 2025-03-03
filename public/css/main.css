@@ -1,0 +1,5 @@
+@import url(./variables.css);
+
+html, body {
+    background-color: var(--color-background);
+}
